@@ -21,7 +21,6 @@ const App = () => {
         <Benefits />
         <Collaboration />
         <Services />
-        <ModelSection />
         <Roadmap />
         <Feedback />
         <Footer />
