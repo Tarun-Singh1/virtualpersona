@@ -32,7 +32,7 @@ const Roadmap = () => {
   };
 
   return (
-    <Section className="overflow-hidden">
+    <Section id="roadmap" className="overflow-hidden">
       <div className="container md:pb-10">
         <Heading tag="Ready to get started" title="What we’re working on" />
 
