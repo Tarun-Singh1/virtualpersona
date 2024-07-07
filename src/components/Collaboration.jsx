@@ -10,7 +10,7 @@ const Collaboration = () => {
       <div className="container lg:flex">
         <div className="max-w-[25rem]">
           <h2 className="h2 mb-4 md:mb-8">
-            AI Chat App for seamless collaboration
+          Access the power of all leading technologies on one platform.
           </h2>
 
           <ul className="max-w-[22rem] mb-10 md:mb-14">
@@ -21,7 +21,7 @@ const Collaboration = () => {
                   <h6 className="body-2 ml-5">{item.title}</h6>
                 </div>
                 {item.text && (
-                  <p className="body-2 mt-3 text-n-4">{item.text}</p>
+                  <p></p>
                 )}
               </li>
             ))}

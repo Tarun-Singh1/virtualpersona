@@ -7,6 +7,9 @@ import Hero from "./components/Hero";
 import Pricing from "./components/Pricing";
 import Roadmap from "./components/Roadmap";
 import Services from "./components/Services";
+import CharacterIntroduction from "./components/CharacterIntroduction"; // Import new component
+import Feedback from "./components/Feedback";
+import ModelSection from "./components/ModelSection";
 
 const App = () => {
   return (
@@ -14,11 +17,13 @@ const App = () => {
       <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
         <Header />
         <Hero />
+        <CharacterIntroduction />
         <Benefits />
         <Collaboration />
         <Services />
-        <Pricing />
+        <ModelSection />
         <Roadmap />
+        <Feedback />
         <Footer />
       </div>
 

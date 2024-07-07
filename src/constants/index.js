@@ -44,8 +44,8 @@ export const navigation = [
   },
   {
     id: "1",
-    title: "Pricing",
-    url: "#pricing",
+    title: "Feedback", // Updated title
+    url: "#feedback",
   },
   {
     id: "2",
@@ -78,9 +78,9 @@ export const notificationImages = [notification4, notification3, notification2];
 export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
 
 export const brainwaveServices = [
-  "Photo generating",
-  "Photo enhance",
-  "Seamless Integration",
+  "All 16 Personalities Available",
+  "Seamlesss Animation",
+  "Easy to Acess",
 ];
 
 export const brainwaveServicesIcons = [
@@ -94,9 +94,9 @@ export const brainwaveServicesIcons = [
 export const roadmap = [
   {
     id: "0",
-    title: "Voice recognition",
-    text: "Enable the chatbot to understand and respond to voice commands, making it easier for users to interact with the app hands-free.",
-    date: "May 2023",
+    title: "Voice/Text Commands",
+    text: "Enable users to use voice commands, making interaction hands-free and effortless.",
+    date: "July 2024",
     status: "done",
     imageUrl: roadmap1,
     colorful: true,
@@ -104,31 +104,31 @@ export const roadmap = [
   {
     id: "1",
     title: "Gamification",
-    text: "Add game-like elements, such as badges or leaderboards, to incentivize users to engage with the chatbot more frequently.",
-    date: "May 2023",
+    text: "Add gamified elements like badges or leaderboards to incentivize users to interact with the assistant more frequently, making it engaging and rewarding.",
+    date: "July 2024",
     status: "progress",
     imageUrl: roadmap2,
   },
   {
     id: "2",
-    title: "Chatbot customization",
-    text: "Allow users to customize the chatbot's appearance and behavior, making it more engaging and fun to interact with.",
-    date: "May 2023",
+    title: "Passive Working",
+    text: "Enables users to automate tasks such as uploading posts, sharing content, and completing straightforward tasks autonomously. This AI can work passively, handling tasks on your behalf even when you're not actively engaged.",
+    date: "July 2024",
     status: "done",
     imageUrl: roadmap3,
   },
   {
     id: "3",
-    title: "Integration with APIs",
-    text: "Allow the chatbot to access external data sources, such as weather APIs or news APIs, to provide more relevant recommendations.",
-    date: "May 2023",
+    title: "API Integration and Authentication",
+    text: "Enable your virtual companion to access external data sources, such as social media apps and news APIs, to deliver personalized and relevant recommendations.",
+    date: "July 2024",
     status: "progress",
     imageUrl: roadmap4,
   },
 ];
 
 export const collabText =
-  "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
+  "With great power comes great responsibility. Our powerful technology keeps you on track, providing assistance in everything you do. It's the power of One for All.";
 
 export const collabContent = [
   {
@@ -138,7 +138,7 @@ export const collabContent = [
   },
   {
     id: "1",
-    title: "Smart Automation",
+    title: "Emotion-based Animation",
   },
   {
     id: "2",
@@ -245,7 +245,7 @@ export const benefits = [
   {
     id: "0",
     title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    text: "Quickly find answers to your questions without the hassle of navigating multiple sources. Save time by eliminating the need to switch between tabs.",
     backgroundUrl: "./src/assets/benefits/card-1.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
@@ -253,7 +253,7 @@ export const benefits = [
   {
     id: "1",
     title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    text: "The app utilizes natural language processing to interpret user queries and deliver precise, relevant responses, enhancing mutual understanding.",
     backgroundUrl: "./src/assets/benefits/card-2.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
@@ -262,15 +262,15 @@ export const benefits = [
   {
     id: "2",
     title: "Connect everywhere",
-    text: "Connect with the AI chatbot from anywhere, on any device, making it more accessible and convenient.",
+    text: "Easily integrate with any social media app to stay updated. Direct its functionalities to automate responses according to your commands.",
     backgroundUrl: "./src/assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
     imageUrl: benefitImage2,
   },
   {
     id: "3",
-    title: "Fast responding",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Time efficient",
+    text: "Helps users maintain focus in a distraction-free environment with virtual assistants, enabling quicker task completion and more personal time.",
     backgroundUrl: "./src/assets/benefits/card-4.svg",
     iconUrl: benefitIcon4,
     imageUrl: benefitImage2,
@@ -278,16 +278,16 @@ export const benefits = [
   },
   {
     id: "4",
-    title: "Ask anything",
-    text: "Lets users quickly find answers to their questions without having to search through multiple sources.",
+    title: "Task Management",
+    text: "Start your day by creating a virtual to-do list. Receive a detailed plan to structure your daily goals, eliminating the need for manual updates and reviews.",
     backgroundUrl: "./src/assets/benefits/card-5.svg",
     iconUrl: benefitIcon1,
     imageUrl: benefitImage2,
   },
   {
     id: "5",
-    title: "Improve everyday",
-    text: "The app uses natural language processing to understand user queries and provide accurate and relevant responses.",
+    title: "Progress Tracker",
+    text: "Track your milestones, failures, and daily progress effortlessly. Access detailed analyses of historical data, providing insights into past activities without the guesswork.",
     backgroundUrl: "./src/assets/benefits/card-6.svg",
     iconUrl: benefitIcon2,
     imageUrl: benefitImage2,
@@ -296,33 +296,21 @@ export const benefits = [
 
 export const socials = [
   {
-    id: "0",
-    title: "Discord",
-    iconUrl: discordBlack,
-    url: "#",
-  },
-  {
     id: "1",
     title: "Twitter",
     iconUrl: twitter,
-    url: "#",
+    url: "https://x.com/Lightning_bytes?t=_BW1u1d_tsrIghc1NCAZXQ&s=09",
   },
   {
     id: "2",
     title: "Instagram",
     iconUrl: instagram,
-    url: "#",
-  },
-  {
-    id: "3",
-    title: "Telegram",
-    iconUrl: telegram,
-    url: "#",
+    url: "https://www.instagram.com/i_am__storm__?igsh=MTk4cjJrdWkxOGR2Mg==",
   },
   {
     id: "4",
     title: "Facebook",
     iconUrl: facebook,
-    url: "#",
+    url: "https://www.linkedin.com/in/tarun-singh-60671329a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   },
 ];

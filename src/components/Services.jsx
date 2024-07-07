@@ -1,3 +1,4 @@
+import React, { useRef, useState } from "react";
 import Section from "./Section";
 import Heading from "./Heading";
 import { service1, service2, service3, check } from "../assets";
@@ -7,17 +8,44 @@ import {
   Gradient,
   VideoBar,
   VideoChatMessage,
+  VideoBar2,
 } from "./design/Services";
-
 import Generating from "./Generating";
+import lumiAudio from "../assets/lumi.MP3";
+import lilyAudio from "../assets/lily.MP3";
 
 const Services = () => {
+  const lumiRef = useRef(new Audio(lumiAudio));
+  const lilyRef = useRef(new Audio(lilyAudio));
+  const [isLumiPlaying, setIsLumiPlaying] = useState(false);
+  const [isLilyPlaying, setIsLilyPlaying] = useState(false);
+
+  const handleToggleLumiAudio = () => {
+    if (isLumiPlaying) {
+      lumiRef.current.pause();
+      setIsLumiPlaying(false);
+    } else {
+      lumiRef.current.play();
+      setIsLumiPlaying(true);
+    }
+  };
+
+  const handleToggleLilyAudio = () => {
+    if (isLilyPlaying) {
+      lilyRef.current.pause();
+      setIsLilyPlaying(false);
+    } else {
+      lilyRef.current.play();
+      setIsLilyPlaying(true);
+    }
+  };
+
   return (
     <Section id="how-to-use">
       <div className="container">
         <Heading
-          title="Generative AI made for creators."
-          text="Brainwave unlocks the potential of AI-powered applications"
+          title="Your Personal Assistant"
+          text="Virtual Persona revolutionise the way humans and AI interact"
         />
 
         <div className="relative">
@@ -26,16 +54,16 @@ const Services = () => {
               <img
                 className="w-full h-full object-cover md:object-right"
                 width={800}
-                alt="Smartest AI"
+                alt="Get a personal assistant with a unique personality"
                 height={730}
                 src={service1}
               />
             </div>
 
             <div className="relative z-1 max-w-[17rem] ml-auto">
-              <h4 className="h4 mb-4">Smartest AI</h4>
+              <h4 className="h4 mb-4">Not the Smartest AI, but very friendly one.</h4>
               <p className="body-2 mb-[3rem] text-n-3">
-                Brainwave unlocks the potential of AI-powered applications
+                Get a personal assistant with a unique personality
               </p>
               <ul className="body-2">
                 {brainwaveServices.map((item, index) => (
@@ -48,9 +76,11 @@ const Services = () => {
                   </li>
                 ))}
               </ul>
+              
             </div>
-
-            <Generating className="absolute left-4 right-4 bottom-4 border-n-1/10 border lg:left-1/2 lg-right-auto lg:bottom-8 lg:-translate-x-1/2" />
+            <div onClick={handleToggleLumiAudio}>
+              <VideoBar />
+            </div>
           </div>
 
           <div className="relative z-1 grid gap-5 lg:grid-cols-2">
@@ -66,22 +96,18 @@ const Services = () => {
               </div>
 
               <div className="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-b from-n-8/0 to-n-8/90 lg:p-15">
-                <h4 className="h4 mb-4">Photo editing</h4>
+                <h4 className="h4 mb-4">Strengthen the bond</h4>
                 <p className="body-2 mb-[3rem] text-n-3">
-                  Automatically enhance your photos using our AI app&apos;s
-                  photo editing feature. Try it now!
+                The more you interact, the stronger your bond grows. Strengthen your understanding, create lasting memories, unlock new capabilities, level up, and earn rewards along the way. Will be available soon!
                 </p>
               </div>
-
-              <PhotoChatMessage />
             </div>
 
             <div className="p-4 bg-n-7 rounded-3xl overflow-hidden lg:min-h-[46rem]">
               <div className="py-12 px-4 xl:px-8">
-                <h4 className="h4 mb-4">Video generation</h4>
+                <h4 className="h4 mb-4">Respect their existence.</h4>
                 <p className="body-2 mb-[2rem] text-n-3">
-                  The world’s most powerful AI photo and video art generation
-                  engine. What will you create?
+                No longer treat AI models as mere computer programs. Recognize their identity. Celebrate their birthdays and treat them with the respect they deserve as entities in their own right.
                 </p>
 
                 <ul className="flex items-center justify-between">
@@ -118,7 +144,9 @@ const Services = () => {
                 />
 
                 <VideoChatMessage />
-                <VideoBar />
+                <div onClick={handleToggleLilyAudio}>
+                  <VideoBar2 />
+                </div>
               </div>
             </div>
           </div>

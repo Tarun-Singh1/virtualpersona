@@ -1,7 +1,7 @@
-import brainwave from "./brainwave.svg";
+import brainwave from "./brainwave.png";
 import check from "./check.svg";
-import brainwaveSymbol from "./brainwave-symbol.svg";
-import brainwaveWhiteSymbol from "./brainwave-symbol-white.svg";
+import brainwaveSymbol from "./brainwave-symbol.png";
+import brainwaveWhiteSymbol from "./brainwave-symbol-white.png";
 import play from "./play.svg";
 import gradient from "./gradient.png";
 import smallSphere from "./4-small.png";
@@ -23,13 +23,14 @@ import background from "./background.jpg";
 
 import curve from "./hero/curve.png";
 import robot from "./hero/robot.jpg";
-import heroBackground from "./hero/hero-background.jpg";
+import video from "./hero/video.mp4";
+import heroBackground from "./hero/hero-background.png";
 
 import curve1 from "./collaboration/curve-1.svg";
 import curve2 from "./collaboration/curve-2.svg";
 import discord from "./collaboration/discord.png";
 import figma from "./collaboration/figma.png";
-import framer from "./collaboration/framer.png";
+import framer from "./collaboration/framer.webp";
 import notion from "./collaboration/notion.png";
 import photoshop from "./collaboration/photoshop.png";
 import protopie from "./collaboration/protopie.png";
@@ -38,7 +39,10 @@ import slack from "./collaboration/slack.png";
 
 import service1 from "./services/service-1.png";
 import service2 from "./services/service-2.png";
-import service3 from "./services/service-3.png";
+import service3 from "./services/service-3.jpg";
+import lumi from "./services/lumi.MP3";
+import lily from "./services/lily.MP3";
+import master from "./roadmap/master.MP3";
 
 import lines from "./pricing/lines.svg";
 import stars from "./pricing/stars.svg";
@@ -52,7 +56,7 @@ import roadmap3 from "./roadmap/image-3.png";
 import roadmap4 from "./roadmap/image-4.png";
 import undone from "./roadmap/undone.svg";
 
-import notification1 from "./notification/image-1.png";
+import notification1 from "./notification/image-1.gif";
 import notification2 from "./notification/image-2.png";
 import notification3 from "./notification/image-3.png";
 import notification4 from "./notification/image-4.png";
@@ -67,10 +71,10 @@ import benefitIcon1 from "./benefits/icon-1.svg";
 import benefitIcon2 from "./benefits/icon-2.svg";
 import benefitIcon3 from "./benefits/icon-3.svg";
 import benefitIcon4 from "./benefits/icon-4.svg";
-import benefitImage2 from "./benefits/image-2.png";
+import benefitImage2 from "./benefits/image-2.gif";
 
 import discordBlack from "./socials/discord.svg";
-import facebook from "./socials/facebook.svg";
+import facebook from "./socials/facebook.png";
 import instagram from "./socials/instagram.svg";
 import telegram from "./socials/telegram.svg";
 import twitter from "./socials/twitter.svg";
@@ -100,6 +104,7 @@ export {
   background,
   curve,
   robot,
+  video,
   heroBackground,
   curve1,
   curve2,
@@ -114,6 +119,9 @@ export {
   service1,
   service2,
   service3,
+  lumi,
+  lily,
+  master,
   lines,
   stars,
   coins,

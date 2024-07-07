@@ -11,6 +11,7 @@ import { useState } from "react";
 const Header = () => {
   const pathname = useLocation();
   const [openNavigation, setOpenNavigation] = useState(false);
+  const [showPopup, setShowPopup] = useState(false); // State for showing popup
 
   const toggleNavigation = () => {
     if (openNavigation) {
@@ -27,6 +28,14 @@ const Header = () => {
 
     enablePageScroll();
     setOpenNavigation(false);
+  };
+
+  const handleShowPopup = () => {
+    setShowPopup(true);
+  };
+
+  const handleClosePopup = () => {
+    setShowPopup(false);
   };
 
   return (
@@ -70,10 +79,11 @@ const Header = () => {
         <a
           href="#signup"
           className="button hidden mr-8 text-n-1/50 transition-colors hover:text-n-1 lg:block"
+          onClick={handleShowPopup} // Show popup on click
         >
           New account
         </a>
-        <Button className="hidden lg:flex" href="#login">
+        <Button className="hidden lg:flex" href="#login" onClick={handleShowPopup}>
           Sign in
         </Button>
 
@@ -85,6 +95,23 @@ const Header = () => {
           <MenuSvg openNavigation={openNavigation} />
         </Button>
       </div>
+
+      {/* Popup */}
+      {showPopup && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+          <div className="bg-white p-8 rounded-lg text-center">
+            <p className="mb-4 text-gray-500">
+              This feature will be available soon!
+            </p>
+            <button
+              className="px-4 py-2 bg-color-1 text-n-1 rounded hover:bg-color-2 transition duration-200"
+              onClick={handleClosePopup} // Close popup on button click
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

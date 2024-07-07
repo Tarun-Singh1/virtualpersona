@@ -86,3 +86,49 @@
 .-rotate-360 {
   @apply rotate-[-360deg]
 }
+
+
+/* index.css */
+
+/* index.css */
+
+/* Floating effect */
+.floating-image {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  animation: floatUpDown 6s ease-in-out infinite alternate;
+}
+
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+
+/* virtual persona\src\index.css */
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.glow-effect:hover {
+  box-shadow: 0 0 10px 2px #ac6aff;
+  transition: box-shadow 0.3s ease-in-out;
+}
