@@ -54,8 +54,8 @@ export const navigation = [
   },
   {
     id: "3",
-    title: "Roadmap",
-    url: "#roadmap",
+    title: "Support",
+    url: "https://virtual-persona-support-git-main-tarun-singh1s-projects.vercel.app/",
   },
   {
     id: "4",

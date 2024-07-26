@@ -83,7 +83,7 @@ const Header = () => {
         >
           New account
         </a>
-        <Button className="hidden lg:flex" href="#login" onClick={handleShowPopup}>
+        <Button className="hidden lg:flex" href="https://virtual-persona-support-git-main-tarun-singh1s-projects.vercel.app/" onClick={handleShowPopup}>
           Sign in
         </Button>
 

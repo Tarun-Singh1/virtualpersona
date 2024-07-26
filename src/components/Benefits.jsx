@@ -6,6 +6,9 @@ import { GradientLight } from "./design/Benefits";
 import ClipPath from "../assets/svg/ClipPath";
 
 const Benefits = () => {
+  // Define a URL to navigate to
+  const link = "https://virtual-persona-support-git-main-tarun-singh1s-projects.vercel.app/";
+
   return (
     <Section id="features">
       <div className="container relative z-2">
@@ -36,7 +39,7 @@ const Benefits = () => {
                   <p className="ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider">
                     Explore more
                   </p>
-                  <Arrow />
+                  <Arrow link={link} /> {/* Pass the link to Arrow component */}
                 </div>
               </div>
 
