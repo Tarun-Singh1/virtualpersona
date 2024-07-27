@@ -43,7 +43,7 @@ const Hero = () => {
           <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
             Make your life easier. Upgrade your productivity, become more time-efficient, and get someone at your service 24x7.
           </p>
-          <Button href="https://virtual-persona-support-git-main-tarun-singh1s-projects.vercel.app/" onClick={handleGetStartedClick} white>
+          <Button href="https://virtual-persona-support.vercel.app/" onClick={handleGetStartedClick} white>
             Get started
           </Button>
         </div>
